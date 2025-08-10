@@ -1,49 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Calculator</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-			rel="stylesheet" />
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="cal-continer">
-				<h1>Simple Calculator</h1>
-				<input type="text" placeholder="Enter 1st Number = " id="user-input1" />
-				<input type="text" placeholder="Enter 2nd Number = " id="user-input2" />
 
-				<br />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Calculator</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
 
-				<label>Select Operation= </label>
-				<button type="button" id="clear" value="" onclick="calculate()">
-					Clear
-				</button>
-				<button type="button" id="add" value="+" onclick="calculate()">
-					+
-				</button>
-				<button type="button" id="subtract" value="-" onclick="calculate()">
-					-
-				</button>
-				<button type="button" id="multiply" value="*" onclick="calculate()">
-					*
-				</button>
-				<button type="button" id="divide" value="/" onclick="calculate()">
-					/
-				</button>
-				<br />
-				<button onclick="calculate()" id="submit-button" class="submit-button">
-					Submit
-				</button>
-				<br />
-				<br />
-				<label>Output= </label>
-				<input type="text" id="calculated-result" />
-			</div>
+<body>
+	<div class="container-fluid">
+		<div class="cal-continer">
+			<h1>Calculator</h1>
+			<input type="text" id="display" />
+			<button type="button" id="clear">Clear</button>
+			<button type="button" id="add">+</button>
+			<button type="button" id="subtract">-</button>
+			<button type="button" id="multiply">*</button>
+			<button type="button" id="divide">/</button>
 		</div>
-		<script src="js/calculator.js"></script>
-	</body>
+	</div>
+	<script src="js/calculator.js"></script>
+</body>
+
 </html>
